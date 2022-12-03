@@ -159,3 +159,6 @@
 %	urlcolor=blue,
 %	citecolor=green,
 %}
+
+%二维码生成
+\input{qrcode}

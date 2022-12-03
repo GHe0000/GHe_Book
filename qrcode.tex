@@ -1,0 +1,51 @@
+\RequirePackage{luacode}
+
+\begin{luacode*}
+local qrcode_encode = require("qrencode.lua")
+function qrcode_generator (str, size)
+  local ok, tab_or_msg = qrcode_encode.qrcode(str)
+  if ok then
+    qrcode_square(tab_or_msg, size)
+  else
+    error(tab_or_msg)
+  end
+end
+
+local appto_list, black_cell, white_cell
+function qrcode_square (tab, size)
+  local square, cell
+  local pixel = tex.round(tex.sp(size or "1cm") / #tab)
+  for x=1, #tab do
+    local column
+    for y=1, #tab[x] do
+      cell = tab[x][y] > 0 and new_black_cell(pixel)
+                            or new_white_cell(pixel)
+      column = appto_list(column, cell)
+    end
+    square = appto_list(square, node.vpack(column))
+  end
+  square = node.hpack(square)
+  node.write(square)
+end
+
+function appto_list (head, new)
+  return node.insert_after(head, node.tail(head), new)
+end
+
+function new_black_cell (pixel)
+  local r = node.new(node.id("rule"))
+  r.width, r.height, r.depth = pixel, pixel, 0
+  return r
+end
+
+function new_white_cell (pixel)
+  local k = node.new(node.id("kern"), 1)
+  k.kern = pixel
+  return k
+end
+\end{luacode*}
+
+\newcommand*\qrcode[2][1cm]{%
+  \quitvmode
+  \directlua{qrcode_generator("\luatexluaescapestring{#2}",
+                              "\the\dimexpr#1\relax")}}
