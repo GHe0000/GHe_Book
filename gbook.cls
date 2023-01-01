@@ -16,6 +16,8 @@
 \RequirePackage[dvipsnames]{xcolor}
 %\RequirePackage{pdfpages}
 \RequirePackage{amsmath,mathtools,amsthm,amsfonts,amssymb,bm}
+\usepackage{bm}
+\usepackage{mathrsfs}
 \RequirePackage[centering,a4paper,body={16cm,25cm}]{geometry} 
 \RequirePackage{subfig}
 \RequirePackage{tikz}
@@ -52,6 +54,9 @@
 \definecolor{c3}{RGB}{107, 190, 190}
 \definecolor{c4}{RGB}{100, 172, 174}
 \definecolor{c5}{RGB}{95, 162, 162}
+%======================================================================
+% 设置花体字母
+\newcommand\ms[1]{\mathscr{#1}}
 %======================================================================
 % 设置日期显示格式为yyyy-mm-dd
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
