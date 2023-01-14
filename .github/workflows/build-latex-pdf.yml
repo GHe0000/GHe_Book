@@ -42,6 +42,7 @@ jobs:
         run: |
           git config --local user.email "guotao.he.0000@outlook.com"
           git config --local user.name "Guotao He"
+          git config --global --add safe.directory /github/workspace
           mv $HOME/main.pdf $(pwd) # bring it back 
           git add -f main.pdf
           git commit -m "Updated by GitHub Action Automatically"
