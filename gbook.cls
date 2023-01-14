@@ -9,6 +9,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{float}
 \RequirePackage{color}
+\RequirePackage{ulem}
 \RequirePackage{siunitx}
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
