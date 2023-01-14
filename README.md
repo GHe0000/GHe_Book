@@ -10,4 +10,10 @@ https://github.com/GHe0000/GHe_Book/releases
 
 ![image](https://user-images.githubusercontent.com/30252929/204068686-2b744834-a45e-4af9-bc1c-2fb407cc8715.png)
 
-你可以在另一个branch找到自动构建的最新版本，但可能会出现错误
+你可以在gh_actions_builds这个branch中下载GitHub Actions自动编译的PDF，此PDF最新但可能存在错误
+
+https://github.com/GHe0000/GHe_Book/tree/gh_actions_builds
+
+此文件也自动发布在GitHub Pages，你也可以直接通过下面链接下载自动编译的PDF
+
+https://ghe0000.github.io/GHe_Book/main.pdf
