@@ -1,5 +1,7 @@
 # GHe_Book
 
+[![Build and Release LaTeX document](https://github.com/GHe0000/GHe_Book/actions/workflows/build-latex.yml/badge.svg)](https://github.com/GHe0000/GHe_Book/actions/workflows/build-latex.yml)
+
 你可以在以下链接中找到该书下载链接
 
 https://github.com/GHe0000/GHe_Book/releases
