@@ -5,6 +5,8 @@
 
 \input{tex/cover} 
 
+\pagenumbering{Roman} %设置罗马数字页码
+
 \newpage
 
 \section{前言}
@@ -42,13 +44,17 @@
     \item 没有附加限制 —— 您不得限制其他人做许可协议允许的事情
 \end{itemize}
 
-\pagenumbering{Roman} %设置罗马数字页码
+\newpage
+
+\pagenumbering{roman} %设置罗马数字页码
+
+\setcounter{page}{1}
 
 \tableofcontents
 
-\setcounter{page}{0}
-
 \newpage
+
+\setcounter{page}{1}
 
 \pagenumbering{arabic} %设置拉丁数字页码
 
