@@ -22,6 +22,7 @@
 \RequirePackage[centering,a4paper,body={16cm,25cm}]{geometry} 
 \RequirePackage{subfig}
 \RequirePackage{tikz}
+\RequirePackage{threeparttable}
 %======================================================================
 % 导入tikz库
 \usetikzlibrary{shapes.geometric, arrows}
