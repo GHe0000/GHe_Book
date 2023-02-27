@@ -619,7 +619,7 @@ E_{tot} &= \sum \frac{1}{2} m_i \tikzmarknode{v}{ \highlight{red}{$ \vec{v_i}^2 
 \path (v.east) ++ (2em,0) node[anchor=west] (scalep){\highlight{red}{$ \vec{v_i}^2 = (\vec{v_c} + \vec{v_{ci}})^2 = \vec{v_c}^2 + \vec{v_{ci}}^2 + 2 \vec{v_c} \cdot \vec{v_{ci}} $}};
 \draw [color=red!87](v.east) -| ([xshift=0.3ex,color=red]scalep.west);
 
-\path (vci.east) ++ (2em,0) node[anchor=west] (scalep2){\highlight{blue}{根据\eqref{zxxxtdl}，此项横等于$0$}};
+\path (vci.east) ++ (2em,0) node[anchor=west, align=left] (scalep2){\highlight{blue}{根据定理\eqref{zxxxtdl}，\\ 此项恒等于$0$}};
 \draw [color=blue!87](vci.east) -| ([xshift=0.3ex,color=blue]scalep2.west);
 
 \end{tikzpicture}
