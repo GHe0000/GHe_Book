@@ -608,11 +608,17 @@ $$\vec{v_i} = \vec{v_c} + \vec{v_{ci}}$$
 
 \begin{subequations}
 \begin{align*}
-E_{tot} &= \sum \frac{1}{2} m_i \vec{v_i}^2 \\
+E_{tot} &= \sum \frac{1}{2} m_i \tikzmarknode{v}{\highlight{red}{$\vec{v_i}^2$}}\\
 &= \sum \frac{1}{2} m_i \vec{v_c}^2 + \sum \frac{1}{2} m_i \vec{v_{ci}}^2 + \vec{v_i} \cdot \sum m_i \vec{v_{ci}} \\
 &= \frac{1}{2} m_{tot} v_c^2 + \sum \frac{1}{2} m_i v_{ci}^2
 \end{align*}
 \end{subequations}
+
+\begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
+\path (v.east) ++ (2em,0) node[anchor=west,color=red!67] (scalep){\textbf{$\vec{v_i}^2 = (\vec{v_c} + \vec{v_{ci}})^2 = \vec{v_c}^2 + \vec{v_{ci}}^2 + 2 \vec{v_c} \cdot \vec{v_{ci}}$}};
+\draw [color=red!87](v.east) -| ([xshift=0.3ex,color=red]scalep.west);
+\end{tikzpicture}
+
 
 证毕，QED。 
 
