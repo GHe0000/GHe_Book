@@ -35,19 +35,6 @@
 \colorlet{linecol}{black!75}
 \RequirePackage{xkcdcolors} % xkcd colors
 
-
-% Commands for Highlighting text -- non tikz method
-\newcommand{\highlight}[2]{\colorbox{#1!17}{$\displaystyle #2$}}
-%\newcommand{\highlight}[2]{\colorbox{#1!17}{$#2$}}
-\newcommand{\highlightdark}[2]{\colorbox{#1!47}{$\displaystyle #2$}}
-
-% my custom colors for shading
-\colorlet{mhpurple}{Plum!80}
-
-\usetikzlibrary{shapes.geometric, arrows}
-\usetikzlibrary{shapes,decorations}
-\usetikzlibrary{intersections,decorations.text}
-
 % 导入 LaTeX 宏包
 \RequirePackage{hyperref}
 \RequirePackage{graphicx}
@@ -101,6 +88,17 @@
 \definecolor{c4}{RGB}{100, 172, 174}
 \definecolor{c5}{RGB}{95, 162, 162}
 %======================================================================
+
+% Commands for Highlighting text -- non tikz method
+\newcommand{\highlight}[2]{\colorbox{#1!17}{$\displaystyle #2$}}
+%\newcommand{\highlight}[2]{\colorbox{#1!17}{$#2$}}
+\newcommand{\highlightdark}[2]{\colorbox{#1!47}{$\displaystyle #2$}}
+
+% my custom colors for shading
+\colorlet{mhpurple}{Plum!80}
+
+%======================================================================
+
 % 设置花体字母
 \newcommand\ms[1]{\mathscr{#1}}
 %======================================================================
