@@ -569,7 +569,7 @@ $$v_{cx} = \frac{\sum m_i v_{ix}}{\sum m_i} ,\quad v_{cy} = \frac{\sum m_i v_{iy
 
 在质心系中，有如下性质
 
-\begin{theo}{质心系系统动量}{}
+\begin{theo}[label=zxxxtdl]{质心系系统动量}{}
 在质心系中，质心速度为$0$，则根据定理\eqref{zxyxtzdl}，系统总动量为$0$，即\textbf{质心系下系统的总动量为零}。写成矢量式为
 
 \begin{subequations}
@@ -609,14 +609,19 @@ $$\vec{v_i} = \vec{v_c} + \vec{v_{ci}}$$
 \begin{subequations}
 \begin{align*}
 E_{tot} &= \sum \frac{1}{2} m_i \tikzmarknode{v}{ \highlight{red}{$ \vec{v_i}^2 $} }\\
-&= \sum \frac{1}{2} m_i \vec{v_c}^2 + \sum \frac{1}{2} m_i \vec{v_{ci}}^2 + \vec{v_i} \cdot \sum m_i \vec{v_{ci}} \\
+&= \sum \frac{1}{2} m_i \vec{v_c}^2 + \sum \frac{1}{2} m_i \vec{v_{ci}}^2 + \vec{v_i} \cdot \tikzmarknode{vci}{ \highlight{blue}{$ \sum m_i \vec{v_{ci}} $} } \\
 &= \frac{1}{2} m_{tot} v_c^2 + \sum \frac{1}{2} m_i v_{ci}^2
 \end{align*}
 \end{subequations}
 
 \begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
+
 \path (v.east) ++ (2em,0) node[anchor=west] (scalep){\highlight{red}{$ \vec{v_i}^2 = (\vec{v_c} + \vec{v_{ci}})^2 = \vec{v_c}^2 + \vec{v_{ci}}^2 + 2 \vec{v_c} \cdot \vec{v_{ci}} $}};
 \draw [color=red!87](v.east) -| ([xshift=0.3ex,color=red]scalep.west);
+
+\path (vci.east) ++ (2em,0) node[anchor=west] (scalep2){\highlight{blue}{根据\eqref{zxxxtdl}，此项横等于$0$}};
+\draw [color=blue!87](vci.east) -| ([xshift=0.3ex,color=blue]scalep2.west);
+
 \end{tikzpicture}
 
 
