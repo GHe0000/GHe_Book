@@ -4,37 +4,6 @@
 \ProvidesClass{gbook}[2022/11/21 gbook]
 \LoadClass[a4paper,twoside,openany,UTF8]{ctexbook}
 %======================================================================
-
-\RequirePackage{tikz}
-\usetikzlibrary{backgrounds}
-\usetikzlibrary{arrows,shapes}
-\usetikzlibrary{tikzmark}
-\usetikzlibrary{calc}
-
-\RequirePackage{amsmath}
-\RequirePackage{amsthm}
-\RequirePackage{amssymb}
-\RequirePackage{mathtools, nccmath}
-
-% for custom commands
-\RequirePackage{xspace}
-
-% table alignment
-\RequirePackage{array}
-\RequirePackage{ragged2e}
-\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
-\newcolumntype{X}[1]{>{\RaggedRight\hspace*{0pt}}p{#1}}
-
-% for tikz
-\RequirePackage{tikz}
-%\usetikzlibrary{trees}
-\usetikzlibrary{arrows,shapes,positioning,shadows,trees,mindmap}
-% \RequirePackage{forest}
-\RequirePackage[edges]{forest}
-\usetikzlibrary{arrows.meta}
-\colorlet{linecol}{black!75}
-\RequirePackage{xkcdcolors} % xkcd colors
-
 % 导入 LaTeX 宏包
 \RequirePackage{hyperref}
 \RequirePackage{graphicx}
@@ -52,13 +21,34 @@
 \RequirePackage{mathrsfs}
 \RequirePackage[centering,a4paper,body={16cm,25cm}]{geometry} 
 \RequirePackage{subfig}
-\RequirePackage{tikz}
 \RequirePackage{threeparttable}
 %======================================================================
-% 导入tikz库
+\RequirePackage{tikz}
+
 \usetikzlibrary{shapes.geometric, arrows}
 \usetikzlibrary{shapes,decorations}
 \usetikzlibrary{intersections,decorations.text}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees,mindmap}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+
+\RequirePackage{mathtools, nccmath}
+
+% for custom commands
+\RequirePackage{xspace}
+
+% table alignment
+\RequirePackage{array}
+\RequirePackage{ragged2e}
+
+% \RequirePackage{forest}
+\RequirePackage[edges]{forest}
+\RequirePackage{xkcdcolors} % xkcd colors
+%======================================================================
+% 导入tikz库
+
 %======================================================================
 
 \RequirePackage{tcolorbox}
@@ -96,6 +86,7 @@
 
 % my custom colors for shading
 \colorlet{mhpurple}{Plum!80}
+\colorlet{linecol}{black!75}
 
 %======================================================================
 
