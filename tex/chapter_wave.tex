@@ -8,8 +8,55 @@
 
 \section{“同侧法”判断波动方向}
 
+\input{pic_wave/tcf_p1}
+
+一简谐波的波形图（$y - x$图）如图所示，上有一质点，判断波的传播方向或该质点此时的运动方向有如下简便的方法。
+
+\begin{theo}{“同侧法”判断波动方向}{}
+任取一个\textbf{非顶点}的质点，左右传播方向和该质点运动方向成一个九十度角。如图所示可以用两个剪头分别表示出来。\textbf{在波形图中，这两个箭头一定是在波的同侧出现。}
+
+运用此方法，知道波的振动方向或某时刻质点的运动方向，便可快速判读出另一个方向。
+
+\end{theo}
+
 \section{“旋转法”判断干涉平面凸起还是凹下}
 
 \section{双缝干涉 —— “横乘横等于竖乘竖”}
+
+\input{pic_wave/sfgs_p1}
+
+如图，一个间距为$d$的双缝，离光屏距离为$L$，干涉条纹间距为$\Delta x$，光的波长为$\lambda$。\textbf{由于光屏比较远（即满足$L \gg d$），则可以近似认为从双缝发出的光到光屏上同一点的光线互相平行}。
+
+记到某一点的两束光光程差为$\Delta l$，第$n$条亮条纹离光屏上的等光程点距离为$x_n$（根据前文近似条件，这里取下面的缝发出光线垂直于光屏时的位置为等光程点\footnote{当然这里也可以取上面的缝对应在光屏上的点或者两缝中点对应在光屏上的点，由于$d$为小量，可以略去不同取法的差别}。）由几何关系，有
+
+$$ \Delta l = d \sin \theta $$
+$$ x_n = L \tan \theta $$
+
+由于亮条纹光程差满足$\Delta l = n \lambda$（$n \in \mathbb{N^{+}}$），故
+
+\begin{subequations}
+\begin{align*}
+x_n = L \tan \theta \tikzmarknode{xljs}{\highlight{red}{$\approx L \sin \theta$}} = \frac{L \Delta l}{d} = \frac{n \lambda L}{d}
+\end{align*}
+\end{subequations}
+
+\begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
+
+\path (xljs.south) ++ (0,-2em) node[anchor=north] (xljsscalep){\highlight{red}{$\theta$为小量时，$\theta \approx \sin \theta \approx \tan \theta$(见“常用小量近似”\eqref{s_xljs})}};
+\draw [color=red!87](xljs.south) -- ([color=red]xljsscalep.north);
+
+\end{tikzpicture}
+
+\vspace{2\baselineskip}
+因此，两条亮条纹之间间距$\Delta x = x_n - x_{n-1} = \frac{\lambda L}{d}$，故
+
+\begin{theo}{双缝干涉 —— “横乘横等于竖乘竖”}{}
+在双缝干涉中，干涉条纹间距$\Delta x$、双缝距离$d$、缝与光屏距离$L$、光的波长$\lambda$满足
+
+$$L \lambda = d \Delta x$$
+
+记忆方法为\textbf{“横乘横等于竖乘竖”}（光为横波，故光的波长记为“横”，乘上“横的距离”（即为$L$，在示意图中它是“横着的”），等于两个“竖的距离”相乘（即为$d$和$\Delta x$，在示意图中它是“竖着的”））
+\end{theo}
+
 
 %\subsection{}

@@ -259,9 +259,12 @@ $$Mg+mg-N=0 + ma$$
 
 如图所示，由于题目中并未告诉我们弹簧原长位置，故我们随便假设一点a为弹簧原长位置，由于物块A、B保持静止，弹簧另一端在竖直面上移动，故以A中心为圆心，到a距离为半径，作圆。现取高于a点的b点分析，根据前文所述，我们可以画出弹力的示意图，并对其进行分解，如图中小图所示。从b下移到a的过程中，由图可以看出，弹力$f$先减小在增大（过a点后增大），其分量$f_x$、$f_y$也先减小后增大（注意过a点后两个分量方向与在b点方向相反)。
 
+
 故我们可知，从b到c的过程中，地面对B摩擦力$f$先减小后增大，地面对B压力$N$一直增大（$f_y$过a点后反向）。
 
+
 但原题中并未告知我们初始P点在原长位置（a点）上方还是下方，故有多种可能，CD均错。
+
 
 综上所述，选AB。
 \end{ep}
@@ -375,7 +378,7 @@ $$\vec{v} = \vec{v^{\prime}} + \vec{v_e}$$
 类比上式，我们可以得到在直线匀加速参考系中加速度牵连关系
 
 \begin{theo}{换系加速度牵连}{}
-现在我们假设有一物体在空间中运动，在地面系中观察，其加速度为$\vec{a}$，在一个相对地面以$\vec{a_e}$的加速度运动的参考系中观察，其加速度为$\vec{a^{\prime}}$。则有如下加速度牵连：
+现在我们假设有一物体在空间中运动，在地面系中观察，其加速度为$\vec{a}$，在一个相对地面以$\vec{a_e}$的加速度平动且没有转动的参考系中观察，其加速度为$\vec{a^{\prime}}$。则有如下加速度牵连：
 $$\vec{a} = \vec{a^{\prime}} + \vec{a_e}$$
 \end{theo}
 
@@ -397,7 +400,7 @@ $$\vec{a} = \vec{a^{\prime}} + \vec{a_e}$$
 \end{minipage}
 ~\\
 
-A、B两船垂直于河岸的分速度均为$v \sin 60^{\circ}$，故两船到达对岸时间相同，均为$t=\frac{L}{v \sin 60^{\circ}}$，C对。由于B船到达正对于出发点的a点，故$u = v \cos 60^{\circ} = \frac{v}{2}$。以B为参考，则A船的速度为$u + v \cos 60^{\circ} = v$，走过的水平距离为$v t = \frac{L}{\sin 60^{\circ}} = \frac{2 \sqrt{3} L}{3} < 2L$，故A船无法与B船相遇，无法过a点，因此ABD错，综上所述，答案为C。
+A、B两船垂直于河岸的分速度均为$v \sin 60^{\circ}$，故两船到达对岸时间相同，均为$t=\frac{L}{v \sin 60^{\circ}}$，C对。由于B船到达正对于出发点的a点，故$u = v \cos 60^{\circ} = \frac{v}{2}$。以B为参考，则A船的速度为$u + v \cos 60^{\circ} = v$，走过的水平距离为$v t = \frac{L}{\sin 60^{\circ}} = \frac{2 \sqrt{3} L}{3} < 2L$，故A船无法与B船相遇，无法过a点，因此ABD错。综上所述，答案为C。
 \end{ep}
 
 \subsection{惯性力}
@@ -478,18 +481,18 @@ $$y_c^{\prime} = \frac{\frac{L}{2} \cdot \lambda L}{M} = 0.5m$$
 \end{ep}
 
 \subsection{质心与系统总动量}
-质心还可用于求系统的总动量。由前文质心定义\eqref{zxdy}，两端求导，得到
+质心还可用于求系统的总动量。由前文质心定义\eqref{zxdy}，两端求导，得到（$m_{tot}$为系统总质量\footnote{这里下标tot为total缩写}）
 \begin{subequations}
 \begin{align*}
-M v_{cx} &= M \frac{d x_c}{dt} = \sum m_i \frac{d x_c}{dt} = \sum m_i v_{ix} \\
-M v_{cy} &= M \frac{d y_c}{dt} = \sum m_i \frac{d y_c}{dt} = \sum m_i v_{iy}  
+m_{tot} v_{cx} &= m_{tot} \frac{d x_c}{dt} = \sum m_i \frac{d x_c}{dt} = \sum m_i v_{ix} \\
+m_{tot} v_{cy} &= m_{tot} \frac{d y_c}{dt} = \sum m_i \frac{d y_c}{dt} = \sum m_i v_{iy}  
 \end{align*}
 \end{subequations}
 
 综上，有如下定理
 
 \begin{theo}[label=zxyxtzdl]{质心与系统总动量}{}
-一个系统的总动量等于系统总质量乘上质心速度，即$\vec{p} = m_{tot} \vec{v}$（$m_{tot}$为系统总质量\footnote{这里下标tot为total缩写}）
+一个系统的总动量等于系统总质量乘上质心速度，即$\vec{p} = m_{tot} \vec{v}$
 \end{theo}
 
 利用该定理，我们可以得到一个多星系统的很有用的结论
@@ -600,7 +603,7 @@ $$E_{tot}=\frac{1}{2} m_{tot} v_c^2 + \sum \frac{1}{2} m_i v_{ci}^2$$
 
 柯尼希定理证明如下：
 
-在地面参考系中，质心速度为$\vec{v_c}$，第$i$个相对质心速度为$\vec{v_{ci}}$，根据前文速度牵连\eqref{s_sdql}，第$i$个质点相对地面速度为
+在地面参考系中，质心速度为$\vec{v_c}$，第$i$个相对质心速度为$\vec{v_{ci}}$，根据前文速度牵连章节\eqref{s_sdql}，第$i$个质点相对地面速度为
 
 $$\vec{v_i} = \vec{v_c} + \vec{v_{ci}}$$
 
@@ -655,11 +658,11 @@ $$\Delta E_{max} = \frac{1}{2} \mu v_{in}^2$$
 其中$\mu$为约化质量\eqref{s_yhzl}，$v_{in}$为两球相对接近速度。
 \end{theo}
 
-\section{等效碰撞}
+%\section{等效碰撞}
 
-\subsection{等效完全非弹性碰撞}
+%\subsection{等效完全非弹性碰撞}
 
-\subsection{等效完全弹性碰撞}
+%\subsection{等效完全弹性碰撞}
 
 \section{恢复系数}
 

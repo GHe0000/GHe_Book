@@ -9,7 +9,8 @@
 \begin{table}[h]
 \centering
 \begin{threeparttable}
-\begin{tabular}{l|l|l|l}
+\begin{tabular}{|l|l|l|l|}
+\hline
 \textbf{符号} & \textbf{名称} & \textbf{精确值}\tnote{1} & \textbf{高中常用值}\\
 \hline
 $g$ & 重力加速度 & $9.80665 m/s^2$ & $10m/s^2$ \\
@@ -29,7 +30,8 @@ $h$ & 普朗克常数 & $6.62606957 \times 10^{-34} J \cdot s$ & $6.63 \times 10
 \section{常用估计值}
 
 \begin{center}
-\begin{tabular}{l|l|l|l|l}
+\begin{tabular}{|l|l|l|l|}
+\hline
 \textbf{符号} & \textbf{名称} & \textbf{估计值} & \textbf{备注} \\
 \hline
 $R_{earth}$ & 地球半径  & $6400 km$  & \\
@@ -42,7 +44,38 @@ $U_{m}$ & $220V$市电振幅 & $311 V$ & \\
 
 \section{常用单位换算}
 
+\subsection{国际单位制词头换算}
+
+\begin{center}
+\begin{tabular}{|l|l|l||l|l|l|}
+\hline
+\textbf{名称} & \textbf{符号} & \textbf{数值} & \textbf{名称} & \textbf{符号} & \textbf{数值} \\
+\hline
+千 & $k$ & $1k=10^3$ & 兆 & $M$ & $1M = 10^6$ \\
+毫 & $m$ & $1m=10^{-3}$ & 微 & $\mu$ & $1\mu = 10^{-6}$\\
+纳 & $n$ & $1n=10^{-9}$ & 皮 & $p$ & $1p = 10^{-12}$\\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection{常用单位与国际单位制单位换算}
+
 \section{常用小量近似}
+\label{s_xljs}
+
+考虑到2022年全国甲卷压轴题需要使用小量近似，故在此给出高中中常见的小量近似（所有的小量近似表达式都是将函数做0处的泰勒（Taylor）展开，只保留前一阶项或者二阶项得来）
+
+下面所有式子中，$x \ll 1$（即$x$为小量）
+
+\begin{itemize}
+\item $\sin x \approx \tan x \approx x$
+\item $\cos x \approx 1 - \frac{x^2}{2}$
+\item $(1+x)^n \approx 1 + nx$（$n$为常数）
+\item $ln(x+1) \approx x - \frac{x^2}{2}$
+\item $e^x \approx 1 + x + \frac{x^2}{2}$
+\end{itemize}
+
+后三项不太常用，考试中若出现一般也会给，可以不记忆。
 
 \section{常用物理图像}
 
