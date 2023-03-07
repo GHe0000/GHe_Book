@@ -131,14 +131,14 @@
 %======================================================================
 % section级样式设置
 \ctexset{section={
-	format={\color{tssteelblue}\large\bfseries},
+	format={\centerline{\color{tssteelblue}\Large\bfseries}},
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
 %======================================================================
 % subection级样式设置
 \ctexset{subsection={
-	format={\color{tssteelblue}\bfseries\normalsize},
+	format={\color{tssteelblue}\bfseries\large},
 	indent={0\ccwd},
 	afterskip={1.0ex \@plus .2ex},
 	}
