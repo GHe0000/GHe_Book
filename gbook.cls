@@ -107,7 +107,7 @@
   %%%%\vspace*{50\p@}% %%% removed!
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
-        \color{tssteelblue} \Huge\bfseries§ \thechapter \quad
+        \color{tssteelblue} \Huge\bfseries Chapter \thechapter \quad
     \fi
     \interlinepenalty\@M
     \color{black} \Huge \bfseries #1
@@ -131,14 +131,14 @@
 %======================================================================
 % section级样式设置
 \ctexset{section={
-	format={\centering\color{tssteelblue}\large\bfseries},
+	format={\color{tssteelblue}\large\bfseries},
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
 %======================================================================
 % subection级样式设置
 \ctexset{subsection={
-	format={\color{tssteelblue}\bfseries\large},
+	format={\color{tssteelblue}\bfseries},
 	indent={0\ccwd},
 	afterskip={1.0ex \@plus .2ex},
 	}
