@@ -102,37 +102,38 @@
 \renewcommand{\proofname}{\indent\bf 证明}
 %======================================================================
 
-\iffalse
 % 定制章节样式
 \makeatletter
 \def\@makechapterhead#1{%
   %%%%\vspace*{50\p@}% %%% removed!
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
-        \color{tssteelblue} \Huge\bfseries \thechapter \quad
+        \color{tssteelblue} \large \bfseries Chapter \thechapter
     \fi
     \interlinepenalty\@M
-    \color{black} \Huge \bfseries #1
+    \par\color{black} \Luge \bfseries #1
     \vskip 5\p@
     \par\color{tssteelblue}\hrule height 2pt
     \par\nobreak
     \vskip 20\p@
   }}
+
 \def\@makeschapterhead#1{%
   %%%%%\vspace*{50\p@}% %%% removed!
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
-    \color{tssteelblue} \Huge \bfseries  #1
+    \color{tssteelblue} \large \bfseries  #1
     \vskip 5\p@
     \par\color{tssteelblue}\hrule height 2pt
     \par\nobreak
     \vskip 20\p@
   }}
 \makeatother
-\fi
+
 
 %======================================================================
+\iffalse
 \ctexset{chapter={
 	format={\centering\color{tssteelblue}\Large\bfseries},
 	name={第, 章},
@@ -140,6 +141,7 @@
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
+\fi
 
 % section级样式设置
 \ctexset{section={
