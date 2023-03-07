@@ -133,9 +133,17 @@
 \fi
 
 %======================================================================
+\ctexset{chapter={
+	format={\centering\color{tssteelblue}\Large\bfseries},
+	name={第, 章},
+	beforeskip={-10pt},
+	afterskip={1.0ex \@plus .2ex},
+	}
+}
+
 % section级样式设置
 \ctexset{section={
-	format={\centering\color{tssteelblue}\Large\bfseries},
+	format={\centering\color{tssteelblue}\large\bfseries},
 	name={§, },
 	afterskip={1.0ex \@plus .2ex},
 	}
@@ -143,7 +151,7 @@
 %======================================================================
 % subection级样式设置
 \ctexset{subsection={
-	format={\color{tssteelblue}\large\bfseries},
+	format={\color{tssteelblue}\bfseries},
 	indent={0\ccwd},
 	afterskip={1.0ex \@plus .2ex},
 	}
