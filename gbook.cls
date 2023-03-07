@@ -107,7 +107,7 @@
   %%%%\vspace*{50\p@}% %%% removed!
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
-        \color{tssteelblue} \Huge\bfseries 第 \thechapter 章 \quad
+        \color{tssteelblue} \Huge\bfseries 第 \chinese{\thechapter} 章 \quad
     \fi
     \interlinepenalty\@M
     \color{black} \Huge \bfseries #1
@@ -132,6 +132,7 @@
 % section级样式设置
 \ctexset{section={
 	format={\centering\color{tssteelblue}\Large\bfseries},
+	name={§, },
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
