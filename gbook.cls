@@ -131,7 +131,7 @@
 %======================================================================
 % section级样式设置
 \ctexset{section={
-	format={\centering\color{tssteelblue}\Large\bfseries},
+	format={\color{tssteelblue}\Large\bfseries},
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
