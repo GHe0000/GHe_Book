@@ -131,7 +131,7 @@
 %======================================================================
 % section级样式设置
 \ctexset{section={
-	format={\color{tssteelblue}\Large\bfseries},
+	format={\underline\color{tssteelblue}\large\bfseries},
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
@@ -152,6 +152,7 @@
 	}
 }
 
+\linespread{1.3}
 
 \newtcbtheorem[number within=section]{qu}{题}%
   {enhanced, breakable,
