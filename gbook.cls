@@ -139,9 +139,9 @@
 	nameformat={\color{tssteelblue}\large\bfseries},
 	name={Chapter \space,  },
 	aftername={\par},
-	titleformat={\huge\bfseries},
+	titleformat={\Large\bfseries},
 	beforeskip={-10pt},
-	afterskip={1.0ex \@plus .2ex},
+	afterskip={40pt},
 	}
 }
 
