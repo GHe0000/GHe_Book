@@ -135,7 +135,7 @@
 %======================================================================
 \ctexset{chapter={
     format={\raggedright},
-    number={\arabic{chapter},
+    number={\arabic{chapter}},
 	nameformat={\color{tssteelblue}\large\bfseries},
 	name={Chapter \space,  },
 	aftername={\par},
