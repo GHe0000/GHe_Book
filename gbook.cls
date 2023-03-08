@@ -134,8 +134,9 @@
 
 %======================================================================
 \ctexset{chapter={
-	format={\centering\color{tssteelblue}\Large\bfseries},
-	name={第, 章\par},
+	format={\color{tssteelblue}\Large\bfseries},
+	name={第, 章},
+	aftername={\par}
 	beforeskip={-10pt},
 	afterskip={1.0ex \@plus .2ex},
 	}
