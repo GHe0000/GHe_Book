@@ -140,7 +140,7 @@
 	name={Chapter \space,  },
 	aftername={\par},
 	titleformat={\huge\bfseries},
-	aftertitle={\par\vskip 5\color{tssteelblue}\hrule height 1pt},
+	aftertitle={\par\color{tssteelblue}\rule[-5pt]{\textwidth}{1pt}},
 	beforeskip={-10pt},
 	afterskip={20pt},
 	}
