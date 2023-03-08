@@ -134,10 +134,10 @@
 
 %======================================================================
 \ctexset{chapter={
-	nameformat={\color{tssteelblue}\large\bfseries},
+	nameformat={\color{tssteelblue}\large\bfseries\raggedleft},
 	name={Chapter,  },
 	aftername={\par},
-	titleformat={\huge\bfseries},
+	titleformat={\huge\bfseries\raggedleft},
 	beforeskip={-10pt},
 	afterskip={1.0ex \@plus .2ex},
 	}
