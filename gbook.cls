@@ -101,7 +101,7 @@
 \newenvironment{solution}{\begin{proof}[\indent\bf 解]}{\end{proof}}
 \renewcommand{\proofname}{\indent\bf 证明}
 %======================================================================
-
+\iffalse
 % 定制章节样式
 \makeatletter
 \def\@makechapterhead#1{%
@@ -130,18 +130,16 @@
     \vskip 20\p@
   }}
 \makeatother
-
+\fi
 
 %======================================================================
-\iffalse
 \ctexset{chapter={
 	format={\centering\color{tssteelblue}\Large\bfseries},
-	name={第, 章},
+	name={第, 章\par},
 	beforeskip={-10pt},
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
-\fi
 
 % section级样式设置
 \ctexset{section={
