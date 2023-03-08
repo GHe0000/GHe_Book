@@ -136,11 +136,11 @@
 \ctexset{chapter={
     format={\raggedright},
     number={\arabic{chapter}},
-	nameformat={\color{tssteelblue}\large\bfseries},
+	nameformat={\color{tssteelblue}\Large\bfseries},
 	name={Chapter \space,  },
 	aftername={\par},
-	titleformat={\Large\bfseries},
-	aftertitle={\par\color{tssteelblue}\hrule height 2pt},
+	titleformat={\huge\bfseries},
+	aftertitle={\vskip 5 \par\color{tssteelblue}\hrule height 2pt},
 	beforeskip={-10pt},
 	afterskip={20pt},
 	}
