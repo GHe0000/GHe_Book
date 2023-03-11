@@ -8,12 +8,81 @@
 在电学中，能量，电场，电势能，电动势在高中课本中均用符号$E$来表示，在遇到综合性问题时可能会出现混淆，在未说明的情况下，按照如下符号规则进行区分：
 
 \begin{itemize}
-\item 能量使用符号$E_{k0}$来表示，英文下标代表能量类型($k$为动能，$p$为势能等)，以数学作为下标
+\item 能量使用符号$E_{k0}$来表示，英文下标代表能量类型($k$为动能，$p$为势能等)，以数学作为下标区分不同量
 \item 电场使用符号$E_a$来表示，以单独的小写英文作为下标
 \item 电势能使用$q \Delta \varphi$或者$E_{p0}$来表示（势能只有电势能时）
 \item 电动势使用英文E的花体$\ms E$表示\footnote{此处电动势作此约定一方面为了便于区分，另一方面为了跟大学教材的符号约定相同}
 \end{itemize}
 \end{mk}
+
+\section{杆切割磁场若干二级结论}
+
+此章节中二级结论比较基础且经常用到，在此仅给出简略的证明过程供记忆和查询使用，在此不做过多介绍。
+
+\subsection{不涉及电容}
+\input{pic_mech/gqcc_p1}
+如图所示，杆长为$L$，电阻为$r$，两根导轨电阻不计，中间用电阻$R$连接，磁场强度为$B$。记$R_{tot} = R + r$为回路总电阻。
+~\\
+
+\noindent \uline{\textbf{通过杆截面电荷量与杆动量变化关系}}
+
+由$F = BIL$两端同乘$\Delta t$可得安培力对杆的动量改变量\footnote{其实就是安培力对杆的冲量，但冲量符号$I$会与电流混淆，故在此用动量改变量描述}为$\Delta p = F \Delta t = BIL \Delta t = BLq$即
+
+\begin{equation}
+\boxed{\Delta p = BLq}
+\end{equation}
+
+\begin{mk}{易错提醒}{}
+在使用$q = I \Delta t$时，若电流$I$并非恒定不变，则$I$要取\textbf{关于时间$t$的平均值（不是有效值）}$\bar I$。
+~\\
+
+这里需要对\textcolor{magenta}{平均值}跟\textcolor{cyan}{有效值}进行区分：
+\begin{itemize}
+\item \textcolor{magenta}{平均值}是\textbf{电流}$I$关于时间$t$的平均值$\bar I$
+\item \textcolor{cyan}{有效值}是\textbf{电流的平方}$I^2$关于时间$t$的平均值$\overline{I^2}$
+\end{itemize}
+这里需要注意，一般情况下，$({\bar I})^2 \neq \overline{I^2}$，即\textbf{电流平均值的平方不等于电流平方的平均值}。
+~\\
+
+在高中物理中，平均值在力学，电磁学等都具有非常广泛的运用，对于一个平均值，我们必须清楚地知道它\textbf{是什么对什么（$x$还是$t$）的平均值}。切记不可将不同的平均值混为一谈。
+\end{mk}
+~\\
+
+\noindent \uline{\textbf{回路中磁通量变化与回路电荷变化关系}}
+
+由$\ms E = \frac{\Delta \Phi}{\Delta t}$跟$I = \frac{\ms E}{R_{tot}}$可得
+
+$$I = \frac{\Delta \Phi}{R_{tot} \Delta t}$$
+
+两端同乘$\Delta t$，有$q = I \Delta t = \frac{\Delta \Phi}{R_{tot}}$，即
+
+\begin{equation}
+\boxed{\Delta q = \frac{\Delta \Phi}{R_{tot}}}
+\end{equation}
+
+若回路是线圈之类的存在$n$匝，则
+
+\begin{equation}
+\boxed{\Delta q = \frac{n \Delta \Phi}{R_{tot}}}
+\end{equation}
+~\\
+
+\noindent \uline{\textbf{杆受到外力且达到平衡时外力与杆速度关系}}
+
+\input{pic_mech/gqcc_p2}
+如图所示，杆长为$L$，电阻为$r$，两根导轨电阻不计，中间用电阻$R$连接，磁场强度为$B$，杆受到大小为$F$的外力。记$R_{tot} = R + r$为回路总电阻。
+
+由$\ms E = BLv$跟$\ms E = I R_{tot}$得$I = \frac{BLv}{R_{tot}}$，由受力平衡有
+$F = BIL = \frac{B^2 L^2 v}{R_{tot}}$，即
+
+\begin{equation}
+\boxed{F = \frac{B^2 L^2 v}{R_{tot}}}
+\end{equation}
+
+\subsection{涉及电容}
+
+\input{pic_mech/gqcc_p3}
+\input{pic_mech/gqcc_p4}
 
 \section{“大内偏大，小外偏小”}
 

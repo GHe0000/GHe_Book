@@ -84,6 +84,10 @@
 
 % 设置花体字母
 \newcommand\ms[1]{\mathscr{#1}}
+
+% 设置粗体向量
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\overrightarrow}[1]{\boldsymbol{#1}}
 %======================================================================
 % 设置日期显示格式为yyyy-mm-dd
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
@@ -149,7 +153,7 @@
 % section级样式设置
 \ctexset{section={
 	format={\centering\color{tssteelblue}\large\bfseries},
-	name={§, },
+	name={\S, },
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
@@ -172,7 +176,7 @@
 
 \linespread{1.3}
 
-\newtcbtheorem[number within=section]{qu}{题}%
+\newtcbtheorem[number within=section]{defi}{定义}%
   {enhanced, breakable,
     colback = white, colframe = cyan, colbacktitle = cyan,
     fonttitle = \sffamily\bfseries}{qst}
@@ -184,12 +188,7 @@
     
 \newtcbtheorem[number within=section]{ep}{例}%
   {enhanced, breakable,
-    colback = white, colframe = Green, colbacktitle = Green,
-    fonttitle = \sffamily\bfseries}{qst}
-
-\newtcbtheorem[number within=section]{defi}{定义}%
-  {enhanced, breakable,
-    colback = white, colframe = RoyalPurple, colbacktitle = RoyalPurple,
+    colback = white, colframe = JungleGreen, colbacktitle = JungleGreen,
     fonttitle = \sffamily\bfseries}{qst}
 
 \newtcbtheorem[number within=section]{mk}{注}%
