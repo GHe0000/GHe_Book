@@ -57,7 +57,10 @@ $$I = \frac{\Delta \Phi}{R_{tot} \Delta t}$$
 两端同乘$\Delta t$，有$q = I \Delta t = \frac{\Delta \Phi}{R_{tot}}$，即
 
 \begin{equation}
+\label{e_dhydl}
+\begin{align}
 \boxed{\Delta q = \frac{\Delta \Phi}{R_{tot}}}
+\end{align}
 \end{equation}
 
 若回路是线圈之类的存在$n$匝，则
@@ -81,8 +84,54 @@ $F = BIL = \frac{B^2 L^2 v}{R_{tot}}$，即
 
 \subsection{涉及电容}
 
+\noindent \uline{\textbf{电容所带电荷与电磁驱动的杆的最大速度}}
+
 \input{pic_mech/gqcc_p3}
+如图所示，杆长为$L$，电阻为$r$，两根导轨电阻不计，杆初速为$0$，中间用电容$C$连接，初始时带有电荷量$Q_0$，磁场强度为$B$，设某时刻杆的速度为$v$。
+
+对于电容，有$Q = C U$，其中$U$为电容两端电压。当杆\textbf{达到末速}$v_{max}$时，\textbf{杆切割磁场产生的电动势与电容两端电压相同}，即$E = U$故
+
+$$E = B l v_{max} = \frac{Q}{C} = U$$
+
+从静止初态到$v_{max}$的末态流经过杆的电荷$\Delta q = Q_0 - Q$。
+
+由前文\eqref{e_dhydl}可得$m v_{max} = B l \Delta q$，故有
+
+
+\begin{subequations}
+\label{e_drms}
+\begin{align}
+B l v_{max} = \frac{Q}{C} \\
+\Delta q = Q_0 - Q \\
+m v_{max} = B l \Delta q
+\end{align}
+\end{subequations}
+
+联立\eqref{e_drms}，解得
+
+\begin{equation}
+\boxed{v_{max} = \frac{B L Q_0}{m + C B^2 L^2}}
+\end{equation}
+~\\
+
+\noindent \uline{\textbf{有电容时受外力杆加速度}}
 \input{pic_mech/gqcc_p4}
+
+如图所示，杆长为$L$，电阻为$r$，两根导轨电阻不计，杆受到外力为$F$，中间用电容$C$连接，初始时所带有电荷量为$0$，磁场强度为$B$，设某时刻杆的速度为$v$，加速度为$a$。
+
+取一个某时刻后微小时间$\Delta t$，则有
+
+$$I = \frac{\Delta Q}{\Delta t} = C \frac{\Delta U}{\Delta t} = CBL \frac{\Delta v}{\Delta t} = CBLa$$
+
+由受力分析得
+
+$$F - BIL = ma$$
+
+联立上面两式，解得
+
+\begin{equation}
+\boxed{a = \frac{F}{m + C B^2 L^2}}
+\end{equation}
 
 \section{“大内偏大，小外偏小”}
 
@@ -604,7 +653,7 @@ $$ Q = \frac{U_{eq}^2 T}{R} $$
 上面两式相等，则有$U_{eq} = \frac{U_0}{\sqrt{2}}$。上述推到对于电流同理，即正弦式交流电等效值为峰值的$\frac{1}{\sqrt{2}}$倍，QED。
 
 \begin{theo}[label=zxbdxfb]{正弦交流电等效方波}{}
-对于正弦式交流电，由于$\frac{U_0^2 t}{2} = U_{eq} t$，因此\textbf{对于一个持续时间为$t$、峰值为$U_0$正弦式交流电，其可以用一个电压为$U_0$，持续时间为$\frac{t}{2}$的恒定方波替代（电流同理）}\footnote{这里要求该正弦式交流电满足$\frac{T}{4}$的整数倍，在高中阶段大多满足。由于不满足此条件超出了高中阶段能求解的范围，故笔者目前仍未见到不能运用此方法等效的高中题目。但为了严谨起见，仍旧在此说明一下}。
+对于正弦式交流电，由于$\frac{U_0^2}{2} \cdot t = U_{eq}^2 \cdot \frac{t}{2}$，因此\textbf{对于一个持续时间为$t$、峰值为$U_0$正弦式交流电，其可以用一个电压为$U_0$，持续时间为$\frac{t}{2}$的恒定方波替代（电流同理）}\footnote{这里要求该正弦式交流电满足$\frac{T}{4}$的整数倍，在高中阶段大多满足。由于不满足此条件超出了高中阶段能求解的范围，故笔者目前仍未见到不能运用此方法等效的高中题目。但为了严谨起见，仍旧在此说明一下}。
 \end{theo}
 
 \input{pic_eled/jfg_p1}
