@@ -88,6 +88,9 @@
 % 设置粗体向量
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 \renewcommand{\overrightarrow}[1]{\boldsymbol{#1}}
+
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} “\nameref*{#1}”}}
+
 %======================================================================
 % 设置日期显示格式为yyyy-mm-dd
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
