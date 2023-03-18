@@ -89,9 +89,9 @@
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 \renewcommand{\overrightarrow}[1]{\boldsymbol{#1}}
 
-\newcommand*{\secref}[1]{\hyperref[{#1}]{\S \ref*{#1} “\nameref*{#1}”}}
-\newcommand*{\theoref}[1]{\hyperref[{#1}]{定理\ref*{#1} “\nameref*{#1}”}}
-\newcommand*{\defiref}[1]{\hyperref[{#1}]{定义\ref*{#1} “\nameref*{#1}”}}
+\newcommand*{\secref}[1]{\hyperref[{#1}]{“\S \ref*{#1} \nameref*{#1}”}}
+\newcommand*{\theoref}[1]{\hyperref[{#1}]{“定理\ref*{#1} \nameref*{#1}”}}
+\newcommand*{\defiref}[1]{\hyperref[{#1}]{“定义\ref*{#1} \nameref*{#1}”}}
 %======================================================================
 % 设置日期显示格式为yyyy-mm-dd
 \def\twodigits#1{\ifnum#1<10 0\fi\the#1}
@@ -207,12 +207,13 @@
 \renewcommand{\floatpagefraction}{0.60}
 
 %超链接参数
-%\hypersetup{	colorlinks=true,
-%	linkcolor=cyan,
-%	filecolor=red,      
-%	urlcolor=blue,
-%	citecolor=green,
-%}
+\hypersetup{
+        colorlinks=false,
+	linkcolor=blue,
+	filecolor=red,      
+	urlcolor=cyan,
+	citecolor=green,
+}
 
 %二维码生成
 \input{qrcode}

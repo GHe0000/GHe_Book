@@ -32,12 +32,12 @@ $$T = \sqrt{\frac{2L}{a}} = \sqrt{\frac{4R}{g}}$$
 \input{pic_mech/dxzljsd_p2}
 \end{minipage}
 ~\\
-右图涉及到换系下加速度牵连，请参考\secref{s_sdql}，图中$\vec{a}$为绝对加速度，$\vec{g^{\prime}}$为牵连加速度，$\vec{g}$为相对加速度。
+右图涉及到换系下加速度牵连，可参考\secref{s_sdql}，图中$\vec{a}$为绝对加速度，$\vec{g^{\prime}}$为牵连加速度，$\vec{g}$为相对加速度。
 \begin{defi}{等效重力加速度}{}
 
 （1）若物体受到除重力外恒力$\vec{F}$，其对物体产生的加速度为$\vec{a_F} = \frac{\vec{F}}{m}$，则等效重力加速度为$\vec{g^{\prime}} = \vec{g} + \vec{a_F}$
 
-（2）若物体在地面系中存在恒定不变的加速度$\vec{a}$，则在一同相对地面加速的参考系中，等效重力加速度\footnote{此处为负号的原因可参考\secref{s_gxl}}为$\vec{g^{\prime}} = \vec{g} - \vec{a}$
+（2）若物体在地面系中存在恒定不变的加速度$\vec{a}$，则在一同相对地面加速的参考系中，等效重力加速度\footnote{此处为负号的原因可参考\secref{s_gxl}，相当于将加速度等效成惯性力后转化为力平衡问题}为$\vec{g^{\prime}} = \vec{g} - \vec{a}$
 \end{defi}
 
 引入等效重力场，我们便可以将一个复合场问题转化为一个单场问题从而运用重力场中运动的结论，或者将一个存在加速的动力学问题转化为一个静力学问题从而进行受力分析，简化解题过程。
@@ -112,7 +112,6 @@ v_y &= a t
 
 \begin{equation}
 \boxed{\tan{\theta_v} = 2 \tan{\theta_r}}
-\label{e_dhydl}
 \end{equation}
 
 \begin{theo}{类平抛速度偏向角与位移偏向角关系}{}
@@ -482,7 +481,7 @@ $$F = \mu \omega^2 L$$
 
 若一个系统由多个质点组成，其整个系统的质量可等效集中于一点，即质心。
 
-\begin{defi}[label=zxdy]{质心定义}{}
+\begin{defi}[label=zxdy]{质心}{}
 若各质点质量与坐标分别为$m_1$、$(x_1,y_1)$，$m_2$、$(x_2,y_2)$……$m_n$、$(x_n,y_n)$，则质心位置为
 $$x_c = \frac{\sum m_i x_i}{\sum m_i} ,\quad y_c = \frac{\sum m_i y_i}{\sum m_i}$$
 \end{defi}
@@ -589,15 +588,15 @@ $$F_C = F_B = \frac{\sqrt{7}G m^2}{a^2} = m \omega ^2 R_C$$
 对于一个质点系而言，只有合外力才会导致系统总动量发生变化，内力不影响系统总动量。
 \end{theo}
 
-\subsection{质心系\quad \dag \protect \footnote{带“\dag”号的章节在高考中用处较少，仅用于简便推导其他二级结论，可只阅读“定理部分”}}
+\subsection{质心系\quad \dag \protect \footnote{带“\dag”号的章节在高考中用处较少，可选择阅读此章节部分内容}}
 
 若我们选取系统的质心为参考点建立参考系，则我们称此参考系为\textbf{质心系}（记为CM系\footnote{CM为Center of Mass的缩写，意为“质心”}）。
 
-\begin{theo}[label=zxxsd]{质心系速度}{}
-根据前文\defiref{zxdy}，对其两端对时间求导，可得
+\begin{defi}[label=zxxsd]{质心系速度}{}
+根据前文\defiref{zxdy}，将式子两端对时间求导，可得质心系的速度
 
 $$v_{cx} = \frac{\sum m_i v_{ix}}{\sum m_i} ,\quad v_{cy} = \frac{\sum m_i v_{iy}}{\sum m_i}$$
-\end{theo}
+\end{defi}
 
 在质心系中，有如下性质
 
@@ -651,7 +650,7 @@ E_{tot} &= \sum \frac{1}{2} m_i \tikzmarknode{v}{ \highlight{red}{$ \vec{v_i}^2 
 \path (v.east) ++ (2em,0) node[anchor=west] (scalep){\highlight{red}{$ \vec{v_i}^2 = (\vec{v_c} + \vec{v_{ci}})^2 = \vec{v_c}^2 + \vec{v_{ci}}^2 + 2 \vec{v_c} \cdot \vec{v_{ci}} $}};
 \draw [color=red!87](v.east) -- ([xshift=0.3ex,color=red]scalep.west);
 
-\path (vci.south) ++ (2em,-2em) node[anchor=north] (scalep2){\highlight{blue}{根据\theoref{zxxxtdl}，此项恒等于$0$}};
+\path (vci.south) ++ (2em,-3em) node[anchor=north] (scalep2){\highlight{blue}{根据\theoref{zxxxtdl}，此项恒等于$0$}};
 \draw [color=blue!87](vci.south) -- ([yshift=-0.3ex,color=blue]scalep2.north);
 
 \end{tikzpicture}
@@ -659,7 +658,7 @@ E_{tot} &= \sum \frac{1}{2} m_i \tikzmarknode{v}{ \highlight{red}{$ \vec{v_i}^2 
 
 证毕，QED。 
 
-我们可以用此定理很快地得到完全非弹性碰撞损失能量公式。若两球发生完全非弹性碰撞，记两球质量和初速分别为$m_1$、$v_1$，$m_2$、$v_2$。则根据\theoref{zxxsd}，可得
+我们可以用此定理很快地得到完全非弹性碰撞损失能量公式。若两球发生完全非弹性碰撞，记两球质量和初速分别为$m_1$、$v_1$，$m_2$、$v_2$。则根据\defiref{zxxsd}，可得
 
 $$v_c = \frac{m_1 v_1 + m_2 v_2}{m_1+m_2}$$
 
