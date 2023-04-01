@@ -38,3 +38,34 @@
 
 ### LaTeX编写说明
 
+在本书中，定义了如下几个环境
+mk(注)，theo(定理)，defi(定义)，ep(例)，mk（注）。
+```
+\begin{theo}{勾股定理}{}
+若 $a,b$ 为直角三角形的两条直角边，$c$ 为斜边，那么 $a^2 + b^2 + c^2.$
+\end{theo}
+
+\begin{qu}{函数}{}
+已知函数 $ f(x) = (x - 2)\mathrm{e}^{2} + a (x - 1)^{2} $ 有两个零点.
+\begin{enumerate}[label=(\arabic*)]
+  \item 求 $ a $ 的取值范围;
+  \item 设 $ x_{1} $, $ x_{2} $ 是 $ f(x) $ 的两个零点，证明 $ x_{1} + x_{2} < 2 $.
+\end{enumerate}
+\end{qu}
+
+\begin{ep}{诗句}{}
+似此星辰非昨夜
+\end{ep}
+
+\begin{defi}{质心}{}
+若各质点质量与坐标分别为$m_1$、$(x_1,y_1)$，$m_2$、$(x_2,y_2)$……$m_n$、$(x_n,y_n)$，则质心位置为
+$$x_c = \frac{\sum m_i x_i}{\sum m_i} \quad y_c = \frac{\sum m_i y_i}{\sum m_i}$$
+\end{defi}
+
+\begin{mk}{标注}{}
+这是一个标注
+\end{mk}
+```
+
+对于花体字母，定义`\ms{}`命令以简便使用
+
