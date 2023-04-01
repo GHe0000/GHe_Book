@@ -53,7 +53,7 @@ mk(注)，theo(定理)，defi(定义)，ep(例)，mk（注）。
 \end{enumerate}
 \end{qu}
 
-\begin{ep}{诗句}{}
+\begin{ep}{句子}{}
 似此星辰非昨夜
 \end{ep}
 
