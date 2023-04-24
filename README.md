@@ -8,7 +8,7 @@
 
 <https://ghe0000.github.io/GHe_Book/main.pdf>
 
-此PDF包含最新的勘误，但没有校验排版，但基本上不会出现排版上的问题。
+此PDF包含最新的勘误，不过没有校验排版，但基本上不会出现排版上的问题。
 
 ---
 
@@ -53,7 +53,7 @@ mk(注)，theo(定理)，defi(定义)，ep(例)，mk（注）。
 \end{enumerate}
 \end{qu}
 
-\begin{ep}{诗句}{}
+\begin{ep}{句子}{}
 似此星辰非昨夜
 \end{ep}
 
