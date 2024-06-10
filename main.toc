@@ -1,0 +1,70 @@
+\contentsline {chapter}{前言}{I}{section*.1}%
+\contentsline {chapter}{简介}{II}{section*.2}%
+\contentsline {chapter}{\numberline {Chapter 1\hspace {.3em}}高中物理常用数据及图像}{1}{chapter.1}%
+\contentsline {section}{\numberline {\S 1.1}常用物理学常量}{1}{section.1.1}%
+\contentsline {section}{\numberline {\S 1.2}常用估计值}{1}{section.1.2}%
+\contentsline {section}{\numberline {\S 1.3}常用换算}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}词头换算}{1}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}单位换算}{2}{subsection.1.3.2}%
+\contentsline {section}{\numberline {\S 1.4}常用小量近似}{2}{section.1.4}%
+\contentsline {section}{\numberline {\S 1.5}常用物理图像}{2}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}等量同种电荷}{2}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}等量异种电荷}{3}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}磁场}{5}{subsection.1.5.3}%
+\contentsline {chapter}{\numberline {Chapter 2\hspace {.3em}}力学}{6}{chapter.2}%
+\contentsline {section}{\numberline {\S 2.1}等时圆}{6}{section.2.1}%
+\contentsline {section}{\numberline {\S 2.2}等效重力场}{6}{section.2.2}%
+\contentsline {section}{\numberline {\S 2.3}类平抛与偏转角关系}{8}{section.2.3}%
+\contentsline {section}{\numberline {\S 2.4}摩擦角与全反力}{9}{section.2.4}%
+\contentsline {section}{\numberline {\S 2.5}整体牛二定律}{10}{section.2.5}%
+\contentsline {section}{\numberline {\S 2.6}图解旋转弹簧类问题}{11}{section.2.6}%
+\contentsline {section}{\numberline {\S 2.7}类抛体最远射程若干解法}{12}{section.2.7}%
+\contentsline {section}{\numberline {\S 2.8}换系}{15}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}速度及加速度牵连}{15}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}惯性力}{16}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}约化质量}{16}{subsection.2.8.3}%
+\contentsline {section}{\numberline {\S 2.9}质心系}{17}{section.2.9}%
+\contentsline {subsection}{\numberline {2.9.1}质心}{17}{subsection.2.9.1}%
+\contentsline {subsection}{\numberline {2.9.2}质心与系统总动量}{18}{subsection.2.9.2}%
+\contentsline {subsection}{\numberline {2.9.3}质心系\hskip 1em\relax \dag \footnote {带“\dag ”号的章节在高考中用处较少，可选择阅读此章节部分内容}}{20}{subsection.2.9.3}%
+\contentsline {subsection}{\numberline {2.9.4}质心系动能定理 \hskip 1em\relax \dag }{20}{subsection.2.9.4}%
+\contentsline {section}{\numberline {\S 2.10}恢复系数}{21}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}定义与基本性质}{22}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}完全弹性碰撞速度关系}{22}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.3}恢复系数与能量关系}{23}{subsection.2.10.3}%
+\contentsline {section}{\numberline {\S 2.11}反冲运动能量变化}{24}{section.2.11}%
+\contentsline {chapter}{\numberline {Chapter 3\hspace {.3em}}电磁学}{26}{chapter.3}%
+\contentsline {section}{\numberline {\S 3.1}杆切割磁场若干二级结论}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}不涉及电容}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}涉及电容}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {\S 3.2}“大内偏大，小外偏小”}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}含义}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}证明}{29}{subsection.3.2.2}%
+\contentsline {section}{\numberline {\S 3.3}电源输出功率性质}{30}{section.3.3}%
+\contentsline {section}{\numberline {\S 3.4}等效源}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}电压源与电流源\hskip 1em\relax \dag }{32}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}电压源与电流源间关系\hskip 1em\relax \dag }{32}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}戴维宁定理与诺顿定理}{33}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}等效源在电路分析中作用}{34}{subsection.3.4.4}%
+\contentsline {section}{\numberline {\S 3.5}“串反并同”及“广义串并联”判断}{36}{section.3.5}%
+\contentsline {section}{\numberline {\S 3.6}变压器等效}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}变压器电流关系}{39}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}变压器等效电阻}{40}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}变压器等效电源}{41}{subsection.3.6.3}%
+\contentsline {section}{\numberline {\S 3.7}“均方根值”速求有效值}{41}{section.3.7}%
+\contentsline {section}{\numberline {\S 3.8}正则动量}{44}{section.3.8}%
+\contentsline {section}{\numberline {\S 3.9}“同吸反斥”}{44}{section.3.9}%
+\contentsline {section}{\numberline {\S 3.10}电磁场换系}{45}{section.3.10}%
+\contentsline {section}{\numberline {\S 3.11}配速法}{46}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}分解速度角度介绍“配速法”}{46}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}电磁场换系角度介绍“配速法”}{47}{subsection.3.11.2}%
+\contentsline {subsection}{\numberline {3.11.3}配速法与粒子汇聚}{47}{subsection.3.11.3}%
+\contentsline {section}{\numberline {\S 3.12}通用“左手定则” \hskip 1em\relax * \footnote {带“*”号为娱乐章节，仅介绍一下笔者一些自认为有意思的想法，可选择不读}}{48}{section.3.12}%
+\contentsline {chapter}{\numberline {Chapter 4\hspace {.3em}}波动与光学}{50}{chapter.4}%
+\contentsline {section}{\numberline {\S 4.1}参考圆}{50}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}定义}{50}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}波动中各质点参考圆关系}{51}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}振动的叠加与参考圆叠加}{51}{subsection.4.1.3}%
+\contentsline {section}{\numberline {\S 4.2}“同侧法”判断波动方向}{51}{section.4.2}%
+\contentsline {section}{\numberline {\S 4.3}“旋转法”判断干涉平面凸起还是凹下}{52}{section.4.3}%
+\contentsline {section}{\numberline {\S 4.4}双缝干涉 —— “横乘横等于竖乘竖”}{52}{section.4.4}%

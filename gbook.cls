@@ -109,7 +109,6 @@
 \newenvironment{solution}{\begin{proof}[\indent\bf 解]}{\end{proof}}
 \renewcommand{\proofname}{\indent\bf 证明}
 %======================================================================
-
 \iffalse
 % 定制章节样式
 \makeatletter
